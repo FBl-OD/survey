@@ -5,7 +5,67 @@
     android:orientation="vertical">
 
     <!--  Start : Your code should be within this block -->
+    <TextView
+        android:id="@+id/tv_title11"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="QUESTION11"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
 
+    <TextView
+        android:id="@+id/tv_question11"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:text="What's your gender ?"
+        />
+<RadioGroup
+    android:id="@+id/rg_two_id11"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/rb_choice11_1"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Male"
+        />
+
+    <RadioButton
+        android:id="@+id/rb_choice11_2"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Female"
+        />
+</RadioGroup>
+    <Button
+        android:id="@+id/bt_next11"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:background="#009688"
+        android:text="NEXT"
+        android:onClick="click11"
+        android:textSize="20sp"
+        />
 
     <!-- END    : Your code should be within this block -->
 
