@@ -119,9 +119,10 @@
     <Button
         android:id="@+id/bt_next8"
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:background="#009688"
         android:text="NEXT"
         android:onClick="click8"

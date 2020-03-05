@@ -51,8 +51,7 @@ public class Activity_Report extends AppCompatActivity {
             //申请权限，特征码自定义为1，可在回调时进行相关判断
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
         }
-        Toast.makeText(this, getCacheDir().toString(), Toast.LENGTH_SHORT).show();
-
+        Toast.makeText(this, getFilesDir().toString(), Toast.LENGTH_SHORT).show();
         File file = new File(getFilesDir() + "/report.json");
         File file1 = new File(getExternalFilesDir(null)+"/report.json");
         if(file.exists()) {

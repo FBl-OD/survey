@@ -58,13 +58,9 @@ public class Activity_Question6 extends AppCompatActivity {
         return onTouchEvent(ev);
     }
 
-    /**
-     * 判断当前点击的位置是否为EditText
-     *
-     * @param v
-     * @param event
-     * @return
-     */
+
+     //判断当前点击的位置是否为EditText
+
     public boolean isShouldHideInput(View v, MotionEvent event) {
         if (v != null && (v instanceof EditText)) { //如果点击的view是EditText
             int[] leftTop = {0, 0};

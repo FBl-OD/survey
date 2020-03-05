@@ -45,9 +45,10 @@
     <Button
         android:id="@+id/bt_next6"
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="240dp"
         android:background="#009688"
         android:hint="NEXT"
         android:onClick="click6"
