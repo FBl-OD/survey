@@ -1,4 +1,4 @@
-package mg.studio.android.survey;
+package mg.studio.android.survey.staticsurvey;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,9 +8,10 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import mg.studio.android.survey.R;
 
 public class Activity_Question6 extends AppCompatActivity {
 
@@ -26,7 +27,7 @@ public class Activity_Question6 extends AppCompatActivity {
         EditText et=findViewById(R.id.et_input6_1);
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
-        intent.setClass(this,Activity_Question7.class);
+        intent.setClass(this, Activity_Question7.class);
         if(et.getText().length()==0){
             Toast.makeText(Activity_Question6.this, "请填写该问题以进行下一步", Toast.LENGTH_SHORT).show();
         }else{

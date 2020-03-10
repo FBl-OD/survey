@@ -1,4 +1,4 @@
-package mg.studio.android.survey;
+package mg.studio.android.survey.staticsurvey;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,43 +6,44 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-public class Activity_Question1 extends AppCompatActivity {
+import mg.studio.android.survey.R;
 
-    private static final String ANSWER1_KEY = "answer1";
+public class Activity_Question9 extends AppCompatActivity {
+
+    private static final String ANSWER9_KEY = "answer9";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.question_one);
-
+        setContentView(R.layout.question_nine);
     }
 
-    public void click1(View v) {
-        Button btn = findViewById(R.id.bt_next1);
-        RadioGroup rg = findViewById(R.id.rg_seven_id1);
+    public void click9(View v) {
+        Button btn = findViewById(R.id.bt_next9);
+        RadioGroup rg = findViewById(R.id.rg_four_id9);
         RadioButton rb;
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
-        intent.setClass(this,Activity_Question2.class);
+        intent.setClass(this, Activity_Question10.class);
         int count = rg.getChildCount();
 
         for (int i = 0; i < count; i++) {
             rb = (RadioButton) rg.getChildAt(i);
             if (rb.isChecked()) {
-                bundle.putString(ANSWER1_KEY, rb.getText().toString());
+                bundle.putString(ANSWER9_KEY, rb.getText().toString());
                 intent.putExtras(bundle);
                 startActivity(intent);
                 break;
             }
             if(i==(count-1)&&!rb.isChecked()){
-                Toast.makeText(Activity_Question1.this, "请填写该问题以进行下一步", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Activity_Question9.this, "请填写该问题以进行下一步", Toast.LENGTH_SHORT).show();
             }
         }
+
     }
 
 }
